@@ -18,3 +18,20 @@ jobs:
         run: |
           cd capitalize
           go build main.go
+  convert:
+    strategy:
+      matrix:
+        go-version: [ 1.16.x ]
+        os: [ ubuntu-latest ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Install go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build
+        run: |
+          cd format-conversion
+          go build main.go
