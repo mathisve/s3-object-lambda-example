@@ -1,0 +1,2 @@
+This is a super short text file used to demonstrate that the lambda is actually working!
+If you run the getFiles.py file you will see it returns this text, but all capitalized!
