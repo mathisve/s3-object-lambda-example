@@ -7,3 +7,7 @@ In the `capitalize` folder you will find a lambda function that capitalizes a te
 
 ## `Convert`
 In the `format-conversion` folder you will find a lambda function that converts json into yaml in transit.
+
+# Video
+
+Find the video about it [here!](https://youtu.be/BLHm8i_4oo8)
